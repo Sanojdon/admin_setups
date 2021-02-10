@@ -1,0 +1,10 @@
+<% if !current_user.superadmin_role? || !current_user.supervisor_role? %>
+	<h1>Visible only for superadmins and supervisors! </h1>
+<% else %>
+<h1>This is the folk game!!</h1>
+<p>
+	There are loot of games in the chances of things.
+	Lets play in the introduction.
+	Capture the moments.
+</p>
+<% end %>
